@@ -17,7 +17,7 @@ export default function Signup() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <div className="w-full max-w-sm p-8 bg-white rounded-lg shadow-md">
-        <h2 className="mb-6 text-2xl font-semibold text-center">Sign Up</h2>
+        <h2 className="mb-6 text-2xl font-semibold text-center text-black">Sign Up</h2>
         <form className="space-y-4">
           <input
             type="text"
@@ -48,7 +48,7 @@ export default function Signup() {
           onClick={() => signIn("google")}
           className="flex items-center justify-center w-full p-3 border border-gray-300 rounded-lg hover:bg-gray-100"
         >
-          <img src="/google-icon.svg" alt="Google" className="w-5 h-5 mr-2" />
+          <img src="/google-icon.svg" alt="Google" className="w-5 h-5 mr-2 text-black" />
           Sign Up with Google
         </button>
         <p className="mt-4 text-sm text-center text-gray-500">
