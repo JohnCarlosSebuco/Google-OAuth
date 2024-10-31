@@ -1,5 +1,6 @@
 "use client";
 import { signIn, useSession } from "next-auth/react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
@@ -54,10 +55,10 @@ export default function Login() {
           Continue with Google
         </button>
         <p className="mt-4 text-sm text-center text-gray-500">
-          New User?{" "}
-          <a href="/signup" className="text-orange-500 hover:underline">
-            Sign Up
-          </a>
+          New user?{" "}
+          <Link href="/signup" className="text-orange-500 hover:underline">
+            Sign up
+          </Link>
         </p>
       </div>
     </div>

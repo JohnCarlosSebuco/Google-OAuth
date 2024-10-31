@@ -1,5 +1,6 @@
 "use client";
 import { signIn, useSession } from "next-auth/react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
@@ -52,9 +53,9 @@ export default function Signup() {
         </button>
         <p className="mt-4 text-sm text-center text-gray-500">
           Already have an account?{" "}
-          <a href="/" className="text-orange-500 hover:underline">
+          <Link href="/" className="text-orange-500 hover:underline">
             Log In
-          </a>
+          </Link>
         </p>
       </div>
     </div>
