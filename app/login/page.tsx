@@ -1,17 +1,9 @@
 "use client";
-import { signIn, useSession } from "next-auth/react";
+import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
-import { useEffect } from "react";
 
 export default function Login() {
-  const { data: session } = useSession();
   const router = useRouter();
-
-  useEffect(() => {
-    if (session) {
-      router.push("/home");
-    }
-  }, [session, router]);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
@@ -50,12 +42,16 @@ export default function Login() {
           onClick={() => signIn("google")}
           className="flex items-center justify-center w-full p-3 border border-gray-300 rounded-lg hover:bg-gray-100"
         >
-          <img src="/google-icon.svg" alt="Google" className="w-5 h-5 mr-2" />
+          <img
+            src="/google-icon.svg"
+            alt="Google"
+            className="w-5 h-5 mr-2"
+          />
           Continue with Google
         </button>
         <p className="mt-4 text-sm text-center text-gray-500">
           New User?{" "}
-          <a href="/signup" className="text-orange-500 hover:underline">
+          <a href="#" className="text-orange-500 hover:underline">
             Sign Up
           </a>
         </p>
