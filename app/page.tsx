@@ -37,12 +37,12 @@ export default function Login() {
           </button>
         </form>
         <div className="flex items-center justify-between mt-4 text-sm">
-          <a href="#" className="text-blue-500 hover:underline">
+          <Link href="#" className="text-blue-500 hover:underline">
             Forgot Password
-          </a>
-          <a href="#" className="text-blue-500 hover:underline">
+          </Link>
+          <Link href="#" className="text-blue-500 hover:underline">
             Log In with Phone Number
-          </a>
+          </Link>
         </div>
         <div className="flex items-center justify-center my-4 text-gray-500">
           <span className="px-2">OR</span>
