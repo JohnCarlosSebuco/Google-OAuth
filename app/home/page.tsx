@@ -25,7 +25,7 @@ export default function Home() {
         </>
       ) : (
         <>
-          <p>Please log in to access this page.</p>
+          <p className="text-black">Please log in to access this page.</p>
           <Link href="/">
             <button className="mt-4 px-4 py-2 font-semibold text-white bg-blue-500 rounded-lg hover:bg-blue-600">
               Go to Login
