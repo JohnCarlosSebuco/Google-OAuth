@@ -11,7 +11,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       {session ? (
         <>
-          <h2 className="mb-4">Welcome, {session.user?.name}</h2>
+          <h2 className="mb-4 text-black">Welcome, {session.user?.name}</h2>
           <button
             onClick={() =>
               signOut({
